@@ -44,7 +44,7 @@ function showResults () {
 
     divField.appendChild(cP());
     const p = document.querySelector(".divP");
-    p.innerHTML = " " ;
+    p.innerHTML = " ";
 
     divH1.innerHTML += `Your typed number is: <strong>${treatNumbers()}</strong>. <br>`;
     p.innerHTML += `The square root of the number ${treatNumbers()} is: <strong>${treatNumbers() ** 0.5}</strong>. <br>`;
@@ -56,12 +56,6 @@ function showResults () {
 }
 
 function treatNumbers () {
-    const character = inputText.value;
-    if (Number.isNaN(character * 1) === true ) {
-        inputText.focus();
-        inputText.value = "";
-        return "This is not a number. Try again.";
-    } else {
-        return Number(character);
-    }
+    const inputNumber = Number(inputText.value);
+    return inputNumber;
 }
