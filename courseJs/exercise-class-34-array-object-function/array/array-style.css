@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label{
+    font-weight: bold;
+}
+
+input{
+    margin: 4px;
+}
+
+div#internal{
+    width: 280px;
+    background-color: #ffffff8e;
+    text-align: right;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+div#presentation{
+    width: 280px;
+    background-color: #ffffff8e;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 8px;
+}
