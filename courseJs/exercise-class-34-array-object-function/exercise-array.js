@@ -1,29 +1,27 @@
-const getName = document.getElementById('name');
-const getLastName = document.getElementById('lastName');
-const getWeight = document.getElementById('weight');
-const getHeight = document.getElementById('height');
-const getButton = document.getElementById('sendButton');
-const divField = document.getElementById('field');
-const getFactory = [];
-divField.appendChild(createDiv());
+function clickToSend () {
+    const getButton = document.getElementById('sendButton');
+    
+    return getButton;
+}
+
+getDiv().appendChild(createDiv());
+
+clickToSend().addEventListener("click", showData);
+
+function showData () {
+    div.appendChild(createP());
+    const p = document.getElementById(`${counter}`);
+    p.setAttribute("id", `${counter++}`);
+
+    getFactory.push(factory(captureName(), captureLastName(), captureWeight(), captureHeight()));
+
+    const factoryLength = getFactory.length - 1;
+
+    p.innerHTML = `${getFactory[factoryLength].name}, ${getFactory[factoryLength].lastName}, ${getFactory[factoryLength].weight}, ${getFactory[factoryLength].height}`;
+}
+
+//div of id presentation
 const div = document.querySelector("#presentation");
-let counter = 0;
-
-
-function factory (name, lastName, weight, height) {
-    return {
-        name, lastName, weight, height
-    };
-}
-
-getButton.addEventListener("click", showData);
-
-function createDiv () {
-    const div = document.createElement("div");
-    div.setAttribute("id", "presentation");
-
-    return div;
-}
 
 function createP () {
     const p = document.createElement("p");
@@ -32,14 +30,50 @@ function createP () {
     return p;
 }
 
-function showData () {
-    div.appendChild(createP());
-    const p = document.getElementById(`${counter}`);
-    p.setAttribute("id", `${counter++}`);
+let counter = 0;
 
-    getFactory.push(factory(getName.value, getLastName.value, getWeight.value, getHeight.value));
+// Store objects
+const getFactory = [];
 
-    const factoryLength = getFactory.length;
+function getDiv () {
+    const divField = document.getElementById('field');
 
-    p.innerHTML = `${getFactory[factoryLength-1].name}, ${getFactory[factoryLength-1].lastName}, ${getFactory[factoryLength-1].weight}, ${getFactory[factoryLength-1].height}`;
+    return divField;
 }
+
+function createDiv () {
+    const div = document.createElement("div");
+    div.setAttribute("id", "presentation");
+
+    return div;
+}
+
+// Functions to capture data
+//-------------------------------------
+function captureName () {
+    const getName = document.getElementById('name');
+    return getName.value;
+}
+
+function captureLastName () {
+    const getLastName = document.getElementById('lastName');
+    return getLastName.value;
+}
+
+function captureWeight () {
+    const getWeight = document.getElementById('weight');
+    return getWeight.value;
+}
+
+function captureHeight () {
+    const getHeight = document.getElementById('height');
+    return getHeight.value;
+}
+//-------------------------------------
+
+function factory (name, lastName, weight, height) {
+    return {
+        name, lastName, weight, height
+    };
+}
+
