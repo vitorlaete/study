@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+div#field h1{
+    text-align: center;
+}
+
+div#field div{
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 700px;
+    max-height: 90vw;
+    margin: auto;
+}
+
+article#imcValue{
+    border: 1px solid black;
+    width: 340px;
+    float: left;
+    overflow: hidden;
+}
+
+article#imcResult{
+    border: 1px solid black;
+    width: 340px;
+    float: right;
+    overflow: hidden;
+
+}
