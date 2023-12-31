@@ -1,30 +1,32 @@
 @charset "utf-8";
 
-div#field h1{
+div#container h1{
+    text-align: center;
+    font-family: var(--font-titles);
+}
+
+div#field{
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 2px 2px 4px grey;
+    margin-top: 20px;
+    padding: 10px;
     text-align: center;
 }
 
-div#field div{
-    background-color: #ffffff;
-    margin: 10px;
+div#field h1{
     padding: 10px;
-    border-radius: 10px;
-    max-width: 700px;
-    max-height: 90vw;
-    margin: auto;
 }
 
 article#imcValue{
-    border: 1px solid black;
-    width: 340px;
-    float: left;
-    overflow: hidden;
+    display: inline-block;
+    width: 200px;
+    font-family: var(--font-body);
 }
 
 article#imcResult{
-    border: 1px solid black;
-    width: 340px;
-    float: right;
-    overflow: hidden;
-
+    display: inline-block;
+    width: 200px;
+    font-family: var(--font-body);
 }
