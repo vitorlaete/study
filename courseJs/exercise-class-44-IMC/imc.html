@@ -25,20 +25,38 @@
 
         <div id="field">
 
-            <h1>IMC Table</h1>
+            <h1><abbr title="Body Mass Index">BMI Calculator</abbr></h1>
 
                 <article id="imcValue">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam ab odio quaerat veritatis est quibusdam repudiandae fugit cupiditate quae optio. Quae officiis excepturi veritatis molestias odit magnam molestiae pariatur dignissimos?
+                    <p class="boldPTitle"><strong>IMC</strong></p>
+                    <p>Less than 18.5 <br> Between 18.5 and 24.9 <br> Between 24.9 and 29.9 <br> Between 29.9 and 34.9 <br> Between 34.9 and 39.9 <br> Bigger than 40</p>
                 </article>
                 <article id="imcResult">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic dolor ut magnam laboriosam non, provident delectus doloremque, id a, nemo minus earum ea in! Eligendi dolores nulla ex rem!
+                    <p class="boldPTitle"><strong>Result</strong></p>
+                    <p>
+                        Underweight <br>
+                        Normal weight <br>
+                        Overweight <br>
+                        Obesity grade 1 <br>
+                        Obes grade2 <br>
+                        Obesity grade 3
+                    </p>
                 </article>
+                <aside class="inputsBMI">
+                    <h1>Calculate your BMI</h1>
+                    <p>Weight:</p>
+                    <input type="text" name="weight" id="weight">
+                    <p>Height:</p>
+                    <input type="tel" name="height" id="height">
+                    <br>
+                    <input type="button" value="Calculate" class="buttonCalculate">
+                </aside>
         </div>
     </div>
 
     <footer>
         <p>by <a href="https://github.com/vitorlaete" target="_blank" rel="noreferrer noopener">Vitor Laete</a></p>
     </footer>
-    <script src=""></script>
+    <script src="./script/imc-script.js"></script>
 </body>
 </html>
