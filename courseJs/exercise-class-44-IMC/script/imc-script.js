@@ -1,4 +1,4 @@
-function effectButtonCalculate () {
+function eventButtonCalculate () {
     const button = document.querySelector(".buttonCalculate");
 
     button.addEventListener("mouseover", () => {
@@ -11,6 +11,7 @@ function effectButtonCalculate () {
 
     button.addEventListener("click", () => {
         button.classList.add("clicking");
+        calculateBMI(inputWeight(), inputHeight());
     });
 
     button.addEventListener("mouseout", () => {
@@ -18,7 +19,7 @@ function effectButtonCalculate () {
     });
 }
 
-effectButtonCalculate();
+eventButtonCalculate();
 
 function inputWeight () {
     const weight = document.querySelector("#weight");
