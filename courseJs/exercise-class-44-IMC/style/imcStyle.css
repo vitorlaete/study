@@ -51,6 +51,8 @@ article#imcResult{
 
 .inputsBMI{
     text-align: left;
+    padding: 10px;
+    font-family: var(--font-body);
 }
 
 .buttonCalculate{
@@ -61,4 +63,32 @@ article#imcResult{
     font-size: 18px;
     margin-top: 3px;
     cursor: pointer;
+    font-family: var(--font-titles);
+}
+
+.over{
+    background-color: var(--color-font);
+}
+
+.clicking{
+    background-color: #000;
+}
+
+div#result{
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: var(--font-body);
+}
+
+.red{
+    background-color: #991a1a;
+}
+
+.yellow{
+    background-color: #b8af33;
+}
+
+.green{
+    background-color: #319131;
 }
