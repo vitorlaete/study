@@ -1,1 +1,83 @@
 @charset "utf-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --color-titles: #000075;
+}
+
+body{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10vw;
+}
+
+h1{
+    background-color: lightblue;
+    text-align: center;
+    color: var(--color-titles);
+    padding: 5px;
+    margin-bottom: 0;
+}
+
+ul#menuSocialMedia{
+    list-style: none;
+    text-align: right;
+}
+
+ul#menuSocialMedia li{
+    display: inline-block;
+}
+
+ul#menuSocialMedia li a:link{
+    padding: 12px;
+    background-color: rgba(211, 211, 211, 0.534);
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+}
+
+ul#menuSocialMedia li a:visited{
+    padding: 12px;
+    background-color: rgba(211, 211, 211, 0.534);
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+}
+
+ul#menuSocialMedia li a:hover{
+    text-decoration: underline;
+    background-color: gray;
+    color: #fff;
+}
+
+
+.pH1{
+    text-align: center;
+    margin: 0;
+    background-color: rgba(173, 216, 230, 0.514);
+}
+
+h2{
+    background-color: rgba(128, 128, 128, 0.548);
+    color: var(--color-titles);
+    border-bottom: 3px solid var(--color-titles);
+    padding: 5px;
+    margin-top: 40px;
+}
+
+span{
+    color: var(--color-titles);
+}
+
+p{
+    padding-left: 5px;
+}
+
+ul{
+    padding-left: 0;
+}
+
+li{
+    list-style-position: inside;
+}
