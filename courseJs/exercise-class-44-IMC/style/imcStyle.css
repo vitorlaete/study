@@ -19,7 +19,7 @@ div#field{
     border-radius: 10px;
     max-width: 500px;
     margin: auto;
-    box-shadow: 2px 2px 4px grey;
+    box-shadow: 0 0 4px grey;
     margin-top: 20px;
     padding: 10px;
     text-align: center;
