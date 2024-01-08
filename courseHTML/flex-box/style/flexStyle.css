@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.container{
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    justify-content: space-evenly;
+
+}
+
+.container div{
+    border: 2px solid yellow;
+    width: 100px;
+}
