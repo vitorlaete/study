@@ -89,12 +89,13 @@ p.pricePlanDescription span{
 }
 
 ul.listItemsPlanDescription{
-    list-style: none;
     padding: 0;
     height: 180px;
+    list-style-type: disc;
+    padding-left: 16px;
 }
 
-/* configuração para adicionar bullet em cor específica */
+/* configuração para adicionar bullet em cor específica
 ul.listItemsPlanDescription li::before{
     content: "\2022";
     color: var(--colorButton);
@@ -102,6 +103,10 @@ ul.listItemsPlanDescription li::before{
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+} */
+
+ul.listItemsPlanDescription li::marker{
+    color: var(--colorButton);
 }
 
 ul.listItemsPlanDescription li{
