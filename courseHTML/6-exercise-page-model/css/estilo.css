@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+:root{
+    --font-titles: 'Instrument Serif', serif;
+    --color-background-top-header: #162028;
+    --color-text-menu: #425564;
+    --color-texts: #555;
+    --color-detail-box: #003d52;
+    --color-background-footer: #0b171f;
+    --color-text-footer: #6f8597;
+    --font-presentation-title: 'Viaoda Libre', serif;
+}
+
+*{
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header.header-top{
+    background-color: var(--color-background-top-header);
+    display: flex;
+    justify-content: space-around;
+}
+
+p.moda-header-top{
+    font-family: var(--font-titles);
+    font-size: 6rem;
+    letter-spacing: 2px;
+    padding: 1rem;
+}
+
+nav.nav-header-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.ul-nav-header-top{
+    list-style: none;
+    display: flex;
+}
+
+ul.ul-nav-header-top li a:link{
+    text-decoration: none;
+    padding: 1rem;
+    font-
+}
+
