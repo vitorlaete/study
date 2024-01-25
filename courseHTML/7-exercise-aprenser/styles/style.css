@@ -9,6 +9,7 @@
     --font-body: 'Ubuntu', sans-serif;
     --color-font-button-nav: #FED001;
     --color-background-nav: #2A2A2A;
+    --color-background-our-school: #003464;
 }
 
 *{
@@ -22,7 +23,7 @@ html{
 header.top-header{
     background-color: var(--color-background-nav);
     display: flex;
-    padding: 2rem 8rem;
+    padding: 3rem 8rem;
     align-items: center;
     justify-content: space-between;
 }
@@ -170,4 +171,85 @@ section.main-courses a{
     padding: 2rem 5rem;
     border-radius: 3px;
     width: 15rem;
+}
+
+section.main-courses a:visited{
+    color: var(--color-background-nav);
+}
+
+section.main-courses a:hover{
+    background-color: var(--color-background-nav);
+    color: var(--color-font-button-nav);
+}
+
+section.main-courses a:active{
+    background-color: var(--color-font-button-nav);
+    color: var(--color-background-nav);
+}
+
+section.our-school{
+    background-color: var(--color-background-our-school);
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10rem;
+}
+
+div.our-school-text{
+    display: flex;
+    flex-direction: column;
+}
+
+div.our-school-text h2.our-school-text-title{
+    font-family: var(--font-body);
+    font-size: 3.5rem;
+    letter-spacing: .1rem;
+    color: #fff;
+}
+
+div.our-school-text p.our-school-text-p{
+    font-family: var(--font-body);
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+    padding-top: 8rem;
+    color: #fff;
+    width: 50rem;
+}
+
+section.location{
+    display: flex;
+    flex-direction: column;
+}
+
+section.location h1.location-title{
+    font-family: var(--font-body);
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    text-align: center;
+    padding: 10rem 10rem 0 10rem;
+}
+
+section.location img{
+    padding: 10rem;
+}
+
+section.location p{
+    text-align: right;
+    font-family: var(--font-body);
+    font-size: 2rem;
+    padding-right: 10rem;
+    padding-bottom: 10rem;
+}
+
+footer{
+    background-color: var(--color-background-nav);
+}
+
+footer p{
+    font-family: var(--font-body);
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 5rem;
+    text-align: center;
 }
