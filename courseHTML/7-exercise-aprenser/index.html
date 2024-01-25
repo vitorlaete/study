@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="O saber transforma nosso SER. Educação de qualidade à distância.">
-    <meta name="author" content="github.io/vitorlaete">
+    <meta name="author" content="https://github.com/vitorlaete">
     <meta name="keywords" content="EAD, Educação à distância, Ensino.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprenser</title>
@@ -12,103 +12,88 @@
 </head>
 <body>
     
-    <header class="top-header">
+    <div class="container-header">
+        <header class="top-header container">
+            <img src="./imagens/logoAprenser.png" alt="Logo Aprenser">
+            <nav class="top-header-nav">
+                <ul class="top-header-buttons">
+                    <li><a href="#main-courses">Cursos</a></li>
+                    <li><a href="#our-school">Nossa Escola</a></li>
+                    <li><a href="#location">Contatos</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
 
-        <img src="./imagens/logoAprenser.png" alt="Logo Aprenser">
+    <div class="container-top-hero">
+        <section class="top-hero container">
+            <div class="top-hero-text">
+                <p class="top-hero-text-p">
+                    O saber é o que transforma <br> nosso SER
+                </p>
+                <a href="#">Saiba mais</a>
+            </div>
+            <img src="./imagens/HeroImage.png" alt="moça cheirando uma flor">
+        </section>
+    </div>
 
-        <nav class="top-header-nav">
+    <div class="container-main-courses">
+        <section class="main-courses container" id="main-courses">
+            <h1 class="main-courses-title">Principais Cursos</h1>
+            <div class="main-courses-list-courses">
+                <article class="main-courses-items">
+                    <img src="./imagens/curso-design.png" alt="Notas">
+                    <div class="item-text">
+                        <h2>Design para web</h2>
+                        <p>O curso Design para Web é perfeito para aqueles que desejam aprender a criar designs atraentes e funcionais para sites e aplicativos móveis.</p>
+                    </div>
+                </article>
+                <article class="main-courses-items">
+                    <img src="./imagens/curso-design-1.png" alt="códigos">
+                    <div class="item-text">
+                        <h2>Front End Developer</h2>
+                        <p>Aprenda HTML, CSS e Javascript e crei interfaces ricas e semânticas para páginas web, aplicativos on-line ou até mesmo aplicações para aparelhos celulares</p>
+                    </div>
+                </article>
+                <article class="main-courses-items">
+                    <img src="./imagens/curso-design-2.png" alt="tela com códigos">
+                    <div class="item-text">
+                        <h2>Back End Developer</h2>
+                        <p>Com este curso você vai dominar uma linguagem back-end a sua escolha, um sistema de banco de dados e aprenderá como funciona o protocolo HTTP na prática.</p>
+                    </div>
+                </article>
+            </div>
+            <a href="#" class="main-courses-button">Ver mais cursos</a>
+        </section>
+    </div>
 
-            <ul class="top-header-buttons">
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Nossa Escola</a></li>
-                <li><a href="#">Contatos</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container-our-school">
+        <section class="our-school container" id="our-school">
+            <img src="./imagens/nossa-escola.png" alt="menina estudando">
+            <div class="our-school-text">
+                <h2 class="our-school-text-title">Nossa escola</h2>
+                <p class="our-school-text-p">
+                    Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de carreira com a nossa escola de tecnologia online. Oferecemos uma ampla gama de cursos online, desde programação e desenvolvimento de software até design gráfico e análise de dados. Nossos instrutores experientes fornecerão a você um ambiente de aprendizado interativo e de suporte para ajudá-lo a adquirir as habilidades necessárias para ter sucesso em sua carreira. Inscreva-se agora e comece sua jornada para se tornar um profissional de tecnologia bem-sucedido.
+                </p>
+            </div>
+        </section>
+    </div>
 
-    <section class="top-hero">
-
-        <div class="top-hero-text">
-
-            <p class="top-hero-text-p">
-                O saber é o que transforma <br> nosso SER
-            </p>
-
-            <a href="#">Saiba mais</a>
-        </div>
-
-        <img src="./imagens/HeroImage.png" alt="moça cheirando uma flor">
-    </section>
-
-    <section class="main-courses">
-
-        <h1 class="main-courses-title">Principais Cursos</h1>
-
-        <div class="main-courses-list-courses">
-
-            <article class="main-courses-items">
-
-                <img src="./imagens/curso-design.png" alt="Notas">
-
-                <div class="item-text">
-                    <h2>Design para web</h2>
-                    <p>O curso Design para Web é perfeito para aqueles que desejam aprender a criar designs atraentes e funcionais para sites e aplicativos móveis.</p>
-                </div>
-            </article>
-
-            <article class="main-courses-items">
-
-                <img src="./imagens/curso-design-1.png" alt="códigos">
-
-                <div class="item-text">
-                    <h2>Front End Developer</h2>
-                    <p>Aprenda HTML, CSS e Javascript e crei interfaces ricas e semânticas para páginas web, aplicativos on-line ou até mesmo aplicações para aparelhos celulares</p>
-                </div>
-            </article>
-
-            <article class="main-courses-items">
-
-                <img src="./imagens/curso-design-2.png" alt="tela com códigos">
-
-                <div class="item-text">
-                    <h2>Back End Developer</h2>
-                    <p>Com este curso você vai dominar uma linguagem back-end a sua escolha, um sistema de banco de dados e aprenderá como funciona o protocolo HTTP na prática.</p>
-                </div>
-
-            </article>
-        </div>
-
-        <a href="#" class="main-courses-button">Ver mais cursos</a>
-    </section>
-
-    <section class="our-school">
-
-        <img src="./imagens/nossa-escola.png" alt="menina estudando">
-
-        <div class="our-school-text">
-
-            <h2 class="our-school-text-title">Nossa escola</h2>
-            <p class="our-school-text-p">
-                Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de carreira com a nossa escola de tecnologia online. Oferecemos uma ampla gama de cursos online, desde programação e desenvolvimento de software até design gráfico e análise de dados. Nossos instrutores experientes fornecerão a você um ambiente de aprendizado interativo e de suporte para ajudá-lo a adquirir as habilidades necessárias para ter sucesso em sua carreira. Inscreva-se agora e comece sua jornada para se tornar um profissional de tecnologia bem-sucedido.
-            </p>
-        </div>
-    </section>
-
-    <section class="location">
+    <section class="location container" id="location">
 
         <h1 class="location-title">Contatos</h1>
 
         <img src="./imagens/map.png" alt="localização">
 
-        <p>
+        <address>
             Av. da Liberdade, 1001 <br>
             Tel.: +351 21 123 456 <br>
             E-mail: contato@aprenser.com
-        </p>
+        </address>
     </section>
 
     <footer>
-        <p>Desenvolvido por Serliv</p>
+        <p>Desenvolvido por <a href="https://github.com/vitorlaete" target="_blank" rel="noferrer noopener">Vitor Laete</a></p>
     </footer>
 </body>
 </html>
