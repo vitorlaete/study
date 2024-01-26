@@ -73,6 +73,10 @@ div.container-top-hero{
     background-image: linear-gradient(to top, #FFFF3D, #fff);
 }
 
+div.container-top-hero span{
+    text-transform: uppercase;
+}
+
 section.top-hero{
     background-image: linear-gradient(to top, #FFFF3D, #fff);
     display: flex;
