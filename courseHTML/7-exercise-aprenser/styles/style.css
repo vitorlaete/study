@@ -27,7 +27,15 @@ html{
 
 div.container-header{
     background-color: var(--color-background-nav);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
+
+/* .element-padded{
+    min-height: 1023.19px;
+} */
 
 header.top-header{
     background-color: var(--color-background-nav);
@@ -154,7 +162,8 @@ div.main-courses-list-courses{
 article.main-courses-items{
     display: flex;
     flex-direction: column;
-    width: 40rem;
+    /* width: 40rem; */
+    flex: 1;
 }
 
 div.item-text{
