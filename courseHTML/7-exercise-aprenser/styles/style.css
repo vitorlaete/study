@@ -33,9 +33,9 @@ div.container-header{
     left: 0;
 }
 
-/* .element-padded{
-    min-height: 1023.19px;
-} */
+.element-padded{
+    padding-top: 15rem;
+}
 
 header.top-header{
     background-color: var(--color-background-nav);
@@ -238,6 +238,7 @@ div.our-school-text h2.our-school-text-title{
     font-size: 3.5rem;
     letter-spacing: .1rem;
     color: #fff;
+    padding: 10rem 0 0 0;
 }
 
 div.our-school-text p.our-school-text-p{
