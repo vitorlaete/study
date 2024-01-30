@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style/form.css">
+</head>
+<body>
+
+    <h1>Form</h1>
+    <form action="#" method="post">
+        
+        <fieldset class="personal-data">
+
+            <legend>Dados Pessoais</legend>
+
+            <label>
+                Nome: <input type="text" name="name" placeholder="Nome completo" required>
+            </label>
+            <label>
+                Data de nascimento: <input type="date" name="dtnasc" id="dtnasc" min="1930-01-01" required>
+            </label>
+
+            <label>
+                E-mail: <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            </label>
+
+            <label>
+                Possui computador próprio <input type="radio" name="have-pc" value="s"> Sim
+                <input type="radio" name="have-pc" value="n"> Não
+            </label>
+        </fieldset>
+<br>
+        <fieldset class="interest-area">
+
+            <legend>Áreas de interesse</legend>
+
+            <label>Que linguagens conhece</label>
+
+            <label for="HTML5"><input type="checkbox" name="html5" id="HTML5">HTML5</label>
+
+            <label for="CSS"><input type="checkbox" name="css" id="CSS">CSS</label>
+
+            <label for="JavaScript"><input type="checkbox" name="js" id="JavaScript">JavaScript</label>
+
+            <label for="PHP"><input type="checkbox" name="php" id="PHP">PHP</label>
+
+            <label for="knowing-level">Nível de conhecimento</label>
+            <select name="level" id="knowing-level" required>
+                <option value="">Selecione</option>
+                <option value="basic">Básico</option>
+                <option value="intermediate">Intermediário</option>
+                <option value="advanced">Avançado</option>
+
+            </select>
+            
+            <label for="list">Outras linguagens</label>
+            <input type="text" list="another-languages" id="list"> 
+            <datalist id="another-languages">
+                <option value="Selecione"></option>
+                <option value="another-language">
+                <option value="another-language 2">
+                <option value="another-language 3">
+                <option value="another-language 4">
+                <option value="another-language 5">
+                
+            </datalist>
+
+        </fieldset>
+<br>
+        <!-- caso eu queira que o cliente não mexa no tamanho da minha textarea eu posso adicionar resize: none; no css. -->
+        
+        <!-- maxlength - limita o número de caracteres -->
+
+        <!-- readonly - apenas leitura -->
+
+        <!-- disable - desabilita a manipulação de usuário -->
+        <fieldset class="message-area">
+            <legend>Outras observações</legend>
+            <textarea name="msg" cols="30" rows="10" placeholder="Digite sua mensagem" maxlength="1000"></textarea>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

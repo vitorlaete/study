@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+form{
+    width: 500px;
+}
+
+fieldset.personal-data{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+fieldset.interest-area{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
