@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulpario</title>
+    <link rel="stylesheet" href="./style/styleFome.css">
+</head>
+<body>
+    <form action="#" method="post">
+
+        <fieldset>
+
+            <legend>Formulário de contato</legend>
+
+            <label for="username">Seu nome</label>
+            <input type="text" name="nameuser" id="nameuser" placeholder="Digite seu nome completo" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu melhor e-mail" required>
+
+            <label for="objective">Assunto</label>
+            <input type="text" name="objective" id="objective">
+
+            <label for="msg">Mensagem</label>
+            <textarea name="msg" id="msg" cols="30" rows="10" minlength="20" maxlength="300" required></textarea>
+
+        </fieldset>
+
+        <input type="submit" value="Enviar" class="btn">
+    </form>
+</body>
+</html>
