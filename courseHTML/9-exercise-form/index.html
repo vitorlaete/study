@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulpario</title>
+    <title>Formulário</title>
     <link rel="stylesheet" href="./style/styleFome.css">
 </head>
 <body>
-    <form action="#" method="post">
+    <form action="#">
 
         <fieldset>
 
             <legend>Formulário de contato</legend>
 
-            <label for="username">Seu nome</label>
-            <input type="text" name="nameuser" id="nameuser" placeholder="Digite seu nome completo" required>
+            <label for="username">Seu nome completo</label>
+            <input type="text" name="nameuser" id="nameuser" class="block" placeholder="Digite seu nome completo" required autofocus>
 
             <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="Digite seu melhor e-mail" required>
+            <input type="email" name="email" id="email" class="block" ="Digite seu melhor e-mail" required>
 
             <label for="objective">Assunto</label>
-            <input type="text" name="objective" id="objective">
+            <input type="text" name="objective" id="objective" class="block" required>
 
             <label for="msg">Mensagem</label>
-            <textarea name="msg" id="msg" cols="30" rows="10" minlength="20" maxlength="300" required></textarea>
+            <textarea name="msg" id="msg" class="block" cols="30" rows="10" minlength="20" maxlength="300" required></textarea>
 
         </fieldset>
 
