@@ -18,7 +18,7 @@ html{
 
 body{
     background-color: var(--color-base);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,8 +65,7 @@ input.style_inputs{
 
 input.style_inputs:focus{
     outline-color: var(--color-base);
-    padding-left: 2rem;
-    font-weight: bold;
+    padding-left: 1.5rem;
 }
 
 div.buttons{
