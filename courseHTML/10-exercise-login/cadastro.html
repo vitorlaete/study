@@ -7,6 +7,7 @@
     <meta name="description" content="tela de login de uma página">
     <title>Login</title>
     <link rel="stylesheet" href="./styles/login_style.css">
+    <link rel="stylesheet" href="./styles/cadastro_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
@@ -16,20 +17,23 @@
     <form action="#" class="square_form" autocomplete="off">
 
         <fieldset class="square_form_field">
-            <legend class="title_square_form">Login</legend>
+            <legend class="title_square_form">Cadastre-se</legend>
             <label for="user" class="style_label">Usuário</label>
             <input type="text" name="user" id="user" class="style_inputs" required autofocus>
+
+            <label for="email" class="style_label">E-mail</label>
+            <input type="email" name="email" id="email" class="style_inputs" required autofocus>
+
 
             <label for="password" class="style_label">Senha</label>
             <input type="password" name="password" id="password" class="style_inputs" required>
         </fieldset>
 
         <div class="buttons">
-            <input type="submit" value="Login" class="log_button">
+            <input type="submit" value="Cadastre-se" class="log_button">
 
-            <a href="./cadastro.html" class="signup_button">Cadastre-se</a>
-
-            <a href="#" class="forgot_passwd">Esqueci minha senha</a>
+            <label for="log_in" class="lab_log_in">Já possui um cadastro?</label>
+            <a href="./index.html" class="sign_in" id="log_in">Faça login</a>
         </div>
         
     </form>

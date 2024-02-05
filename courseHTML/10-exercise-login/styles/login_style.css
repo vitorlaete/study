@@ -4,7 +4,6 @@
     --color-base: #1d52a0af;
     --main-font-family: 'Roboto', sans-serif;
     --border-left-and-button-login-color: #1c3585;
-
 }
 
 *{
@@ -66,6 +65,8 @@ input.style_inputs{
 
 input.style_inputs:focus{
     outline-color: var(--color-base);
+    padding-left: 2rem;
+    font-weight: bold;
 }
 
 div.buttons{
