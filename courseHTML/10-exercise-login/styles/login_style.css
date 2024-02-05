@@ -2,14 +2,15 @@
 
 :root{
     --color-base: #1d52a0af;
-    /* --color-border_bottom: #1d51a0e3; */
+    --main-font-family: 'Roboto', sans-serif;
+    --border-left-and-button-login-color: #1c3585;
 
 }
 
 *{
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--main-font-family);
 }
 
 html{
@@ -26,10 +27,14 @@ body{
 
 form.square_form{
     background-color: #fff;
+    max-width: 85vw;
     width: 50rem;
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    border-left-style: solid;
+    border-left-width: .4rem;
+    border-left-color: var(--border-left-and-button-login-color);
 }
 
 fieldset.square_form_field{
@@ -41,17 +46,82 @@ fieldset.square_form_field{
 legend.title_square_form{
     font-size: 3rem;
     padding: 1.5rem 0;
+    color: var(--color-base);
+    font-weight: 300;
 }
 
 label.style_label{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
-    font-weight: 1  00;
+    font-weight: 300;
+    letter-spacing: .2rem;
 }
 
 input.style_inputs{
-    padding: .8rem;
+    padding: 1rem;
     margin-bottom: 2.5rem;
     border: none;
-    border-bottom: .2rem solid var(--color-base);
+    border-bottom: .1rem solid var(--color-base);
+}
+
+input.style_inputs:focus{
+    outline-color: var(--color-base);
+}
+
+div.buttons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+input.log_button{
+    padding: .8rem 1.5rem;
+    color: #fff;
+    background-color: var(--border-left-and-button-login-color);
+    border: none;
+    border-radius: .3rem;
+    font-weight: normal;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    cursor: pointer;
+}
+
+input.log_button:hover{
+    background-color: var(--color-base);
+}
+
+input.log_button:active{
+    background-color: #000;
+    color: #fff;
+}
+
+a.signup_button{
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: var(--border-left-and-button-login-color);
+    font-weight: bold;
+    cursor: pointer;
+    padding: .8rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+a.signup_button:hover{
+    outline: var(--color-base) solid .2rem;
+    padding: .8rem 1.5rem;
+    border-radius: .3rem;
+}
+
+a.signup_button:active{
+    color: #000;
+    outline: #000 solid .2rem;
+}
+
+a.forgot_passwd{
+    margin-left: auto;
+    cursor: pointer;
 }

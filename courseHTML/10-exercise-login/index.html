@@ -7,26 +7,31 @@
     <meta name="description" content="tela de login de uma página">
     <title>Login</title>
     <link rel="stylesheet" href="./styles/login_style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    </head>
+
 <body>
     <form action="#" class="square_form">
 
         <fieldset class="square_form_field">
             <legend class="title_square_form">Login</legend>
-            <label for="user" class="style_label">Usuário:</label>
-            <input type="text" name="user" id="user" class="style_inputs" required>
+            <label for="user" class="style_label">Usuário</label>
+            <input type="text" name="user" id="user" class="style_inputs" required autofocus>
 
-            <label for="password" class="style_label">Senha:</label>
+            <label for="password" class="style_label">Senha</label>
             <input type="password" name="password" id="password" class="style_inputs" required>
         </fieldset>
 
         <div class="buttons">
             <input type="submit" value="Login" class="log_button">
 
-            <input type="submit" value="Cadastre-se" class="singup_button">
-        </div>
+            <a href="#" class="signup_button">Cadastre-se</a>
 
-        <a href="">Esqueci minha senha</a>
+            <a href="#" class="forgot_passwd">Esqueci minha senha</a>
+        </div>
+        
     </form>
 </body>
 </html>
