@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+a[target="_blank"]::after{
+    content: url(../imagens/newWindow-icon.png);
+}
+
+a[href$=".pdf"]::before{
+    content: url(../imagens/pdf-icon.gif);
+}
+
+input[type="checkbox"]:checked+label{
+    color: green;
+}
+
+input[type="checkbox"]:not(:checked)+label{
+    color: red;
+}
+
+input[type="checkbox"]:disabled+label{
+    color: blue;
+}
+
+ol ul>li:nth-child(3),
+ol ol>li:nth-child(3){
+    background-color: blueviolet;
+}
