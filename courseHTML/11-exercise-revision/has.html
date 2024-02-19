@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>has()</title>
+
+    <style>
+
+        th{
+            background-color: lightgrey;
+            text-align: left;
+        }
+
+        tr:nth-child(odd){
+            background-color: rgba(211, 211, 211, 0.575);
+        }
+
+        tr:hover{
+            background-color: grey;
+        }
+
+        th, td{
+            border-bottom: 1px solid black;
+            padding: 5px;
+        }
+
+        input:hover{
+            cursor: pointer;
+        }
+
+        tr:has(td:first-child input[type="checkbox"]:checked){
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th></th><th>Nome</th><th>E-mail</th>
+        </thead>
+        <tbody>
+            <tr><td><input type="checkbox" name="" id=""></td><td>Wyatt Alvarez</td><td>wyatt.alvarez@example.com</td></tr>
+            <tr><td><input type="checkbox" name="" id=""></td><td>Tyrone Baker</td></td><td>tyrone.baker@example.com</td></tr>
+            <tr><td><input type="checkbox" name="" id=""></td><td>Ryan Chapman</td></td><td>ryan.chapman@example.com</td></tr>
+            <tr><td><input type="checkbox" name="" id=""></td><td>Clifton Williamson</td></td><td>clifton.williamson@example.com</td></tr>
+            <tr><td><input type="checkbox" name="" id=""></td><td>Allen Terry</td><td>allen.terry@example.com</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>
